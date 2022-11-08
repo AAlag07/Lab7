@@ -3,12 +3,12 @@ function init() {
 	function makealert() {
 			var input = document.getElementById('entryinput').value;
 			var output = document.getElementById('textoutput');
-			document.getElementById('textoutput').innerText = input;
+			output.innerHTML = input;
 			alert('Angelo Alag: ' + input);
 	}
 	
 	var vbutton = document.getElementById('entrybutton');
-			vbutton.addEventListener('click', alertvar);
+			vbutton.addEventListener('click', makealert);
 }
 
 
